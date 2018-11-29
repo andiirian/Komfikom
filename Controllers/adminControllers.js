@@ -246,6 +246,7 @@ var Controllers = {
     getHapusBerita  : getHapusBerita,
     getlihatBerita  : getlihatBerita,
     postEditStatusBerita : postEditStatusBerita
+    
 }
 
 module.exports = Controllers
