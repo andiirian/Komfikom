@@ -4,7 +4,7 @@ var modelGallery = require('../Models/modelGallery')
 
 var getIndex = (req, res, next) =>{
     var sejarah = modelSejarah.find();
-    var berita  = modelBerita.find()
+    var berita  = modelBerita.find().sort({_id: -1})
 
     var run = async () =>{
         var sejarahh = await sejarah
@@ -42,7 +42,7 @@ var getGallery = (req, res, next) =>{
 }
 
 var getBerita = (req, res, next) =>{
-    modelBerita.find().exec((err, result) =>{
+    modelBerita.find().sort({_id : -1}).exec((err, result) =>{
         res.render('index/berita', {result : result})
     })
     

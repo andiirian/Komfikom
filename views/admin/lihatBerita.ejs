@@ -214,17 +214,18 @@
                 <div class="form-row">
                         <div class="form-group col-md-6">
                           <label for="inputEmail4">Title</label>
-                          <input value="<%= result.title %>" name="title" type="text" class="form-control" id="inputEmail4" placeholder="Email">
+                          <input disabled value="<%= result.title %>" name="title" type="text" class="form-control" id="inputEmail4" placeholder="Email">
                         </div>
                         <div class="form-group col-md-6">
                           <label for="inputPassword4">Nama</label>
-                          <input name="nama" type="text" class="form-control" id="inputPassword4" placeholder="Password">
+                          <input disabled name="nama" value="<%=result.name%>" type="text" class="form-control" id="inputPassword4" placeholder="Password">
                         </div>
                       </div>
                     <textarea id="editor1" name="content" rows="10" cols="80"><%- result.content %></textarea>
                  
-                  <button type="submit" class=" mt-2 btn btn-primary btn-block">Submit</button>
-					  
+                  <button name="btn" value="1" type="submit" class=" mt-2 btn btn-primary btn-block">Post</button>
+                  <button name="btn" value="2" type="submit" class=" mt-2 btn btn-primary btn-block">Tolak</button>
+
                     
               </form>
             </div>

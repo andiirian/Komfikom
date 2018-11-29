@@ -5,7 +5,8 @@ var karyaTulisSchema = new mongoose.Schema({
     title   : String,
     content : String,
     penulis : String,
-    date    : String
+    date    : String,
+    foto    : String
 
 })
 
